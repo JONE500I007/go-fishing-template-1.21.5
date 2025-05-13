@@ -11,7 +11,6 @@ import net.minecraft.village.TradedItem;
 import net.minecraft.village.VillagerProfession;
 
 public class ModCustomTrades {
-    /*
     public static void registerCustomTrades() {
         GoFishing.LOGGER.info("Registering Villager Trades From " + GoFishing.MOD_ID);
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
@@ -37,28 +36,6 @@ public class ModCustomTrades {
             ));
         });
 
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.FISHING_MASTER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 2),
-                    new ItemStack(Items.WHEAT, 10),
-                    10, 2, 0.2f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.FISHING_COIN, 1500),
-                    new ItemStack(Items.EMERALD, 2),
-                    16, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.FISHING_COIN, 7),
-                    new ItemStack(Items.DIAMOND, 1),
-                    16, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.GOLD_INGOT, 5),
-                    new ItemStack(ModItems.COOKED_BLUE_FISH, 1),
-                    10, 15, 0.1f
-            ));
-        });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.FISHING_MASTER, 2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 2),
@@ -81,30 +58,5 @@ public class ModCustomTrades {
                     10, 15, 0.1f
             ));
         });
-
-        TradeOfferHelper.registerWanderingTraderOffers( 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.FISHING_COIN, 200),
-                    new ItemStack(ModItems.BAMBOO_FISHING_ROD, 1),
-                    10, 2, 0.2f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.RED_CARD_FISH, 1),
-                    new ItemStack(ModItems.FISHING_COIN, 120),
-                    16, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.BLACK_CARD_FISH, 1),
-                    new ItemStack(ModItems.FISHING_COIN, 120),
-                    16, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.PEARL_2, 1),
-                    new ItemStack(ModItems.FISHING_COIN, 50),
-                    10, 15, 0.1f
-            ));
-        });
     }
-
-     */
 }
