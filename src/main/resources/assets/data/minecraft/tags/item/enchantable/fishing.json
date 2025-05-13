@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "go-fishing:bamboo_fishing_rod",
-    "go-fishing:red_card_fish"
+    "go-fishing:bamboo_fishing_rod"
   ]
 }

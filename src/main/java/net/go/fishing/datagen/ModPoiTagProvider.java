@@ -11,10 +11,6 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModPoiTagProvider {
-
-}
-/*
 public class ModPoiTagProvider extends TagProvider<PointOfInterestType> {
     public ModPoiTagProvider(DataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, RegistryKeys.POINT_OF_INTEREST_TYPE, registriesFuture);
@@ -26,4 +22,3 @@ public class ModPoiTagProvider extends TagProvider<PointOfInterestType> {
                 .addOptional(Identifier.of(GoFishing.MOD_ID, "fishingpoi"));
     }
 }
- */

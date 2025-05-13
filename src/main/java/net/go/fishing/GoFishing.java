@@ -5,7 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import net.go.fishing.block.ModBlocks;
 import net.go.fishing.item.ModItemGroups;
 import net.go.fishing.item.ModItems;
+import net.go.fishing.util.ModTags2;
 import net.go.fishing.villager.ModVillagers;
+import net.go.fishing.villager.ModVillagers2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +24,7 @@ public class GoFishing implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModVillagers.registerVillagers();
+		//ModVillagers2.registerVillagers();
 
 		LOGGER.info("Hello Fabric world!");
 	}

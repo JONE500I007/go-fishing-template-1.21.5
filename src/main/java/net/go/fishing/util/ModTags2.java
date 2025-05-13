@@ -23,4 +23,14 @@ public class ModTags2 {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, name));
         }
     }
+    /*
+
+    public static class PointOfInterestType {
+        public static final TagKey<net.minecraft.world.poi.PointOfInterestType> ACQUIRABLE_JOB_SITE = createTag("acquirable_job_site");
+
+        public static TagKey<net.minecraft.world.poi.PointOfInterestType> createTag(String name) {
+            return TagKey.of(RegistryKeys.POINT_OF_INTEREST_TYPE, Identifier.of(GoFishing.MOD_ID, name));
+        }
+    }
+     */
 }

@@ -59,6 +59,7 @@ public class ModItems {
 
     public static final Item PEARL_3 = registerItem("pearl_3",
             new Item(new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "pearl_3")))
                     .attributeModifiers(AttributeModifiersComponent.builder()
                     .add(EntityAttributes.LUCK,
                             new EntityAttributeModifier(Identifier.of(GoFishing.MOD_ID), 10,

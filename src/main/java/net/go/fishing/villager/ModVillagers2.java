@@ -15,10 +15,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
-public class ModVillagers {
+public class ModVillagers2 {
+    /*
 
-    public static final RegistryKey<PointOfInterestType> FISHING_POI_KEY = registerPoiKey("fishing_poi");
-    public static final PointOfInterestType FISHING_POI = registerPoi("fishing_poi", ModBlocks.COMPRESSED_FISH_BLOCK);
+    public static final RegistryKey<PointOfInterestType> FISHING_POI_KEY = poiKey("fishingpoi");
+    public static final PointOfInterestType FISHING_POI = registerPoi("fishingpoi", ModBlocks.COMPRESSED_FISH_BLOCK);
 
     public static final VillagerProfession FISHING_MASTER = registerProfession("fishing_master", FISHING_POI_KEY);
 
@@ -37,11 +38,13 @@ public class ModVillagers {
         return PointOfInterestHelper.register(Identifier.of(GoFishing.MOD_ID, name),1, 1, block);
     }
 
-    private static RegistryKey<PointOfInterestType> registerPoiKey(String name) {
+    private static RegistryKey<PointOfInterestType> poiKey(String name) {
         return RegistryKey.of(RegistryKeys.POINT_OF_INTEREST_TYPE, Identifier.of(GoFishing.MOD_ID, name));
     }
 
     public static void registerVillagers() {
         GoFishing.LOGGER.info("Registering Villagers" + GoFishing.MOD_ID);
     }
+
+     */
 }
