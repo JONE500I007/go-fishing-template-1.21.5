@@ -3,7 +3,11 @@
 	"package": "net.go.fishing.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+
+		"FishingBobberAccessor",
+		"FishingBobberEntityMixin",
+		"FishingBobberRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
