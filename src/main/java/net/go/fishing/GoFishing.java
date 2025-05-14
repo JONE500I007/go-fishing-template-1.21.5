@@ -9,6 +9,7 @@ import net.go.fishing.util.ModCustomTrades;
 import net.go.fishing.util.ModTags2;
 import net.go.fishing.villager.ModVillagers;
 import net.go.fishing.villager.ModVillagers2;
+import net.go.fishing.villager.ModVillagers3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,7 @@ public class GoFishing implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModVillagers.registerVillagers();
+		//ModVillagers3.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
 
 		//ModVillagers2.registerVillagers();

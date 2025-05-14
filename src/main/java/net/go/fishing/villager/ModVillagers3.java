@@ -15,20 +15,25 @@ import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
-public class ModVillagers {
-
+public class ModVillagers3 {
+    /*
     public static final RegistryKey<PointOfInterestType> FISHING_POI_KEY = registerPoiKey("fishing_poi");
     public static final PointOfInterestType FISHING_POI = registerPoi("fishing_poi", ModBlocks.COMPRESSED_FISH_BLOCK);
 
-    public static final VillagerProfession FISHING_MASTER = registerProfession("fishing_master", FISHING_POI_KEY);
-
     public static final RegistryKey<VillagerProfession> FISHING_MASTER_KEY = RegistryKey.of(
-            RegistryKeys.VILLAGER_PROFESSION, Identifier.of(GoFishing.MOD_ID, "fishing_master"));
+            RegistryKeys.VILLAGER_PROFESSION, Identifier.of("go-fishing", "fishing_master"));
 
-    private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
-        return Registry.register(Registries.VILLAGER_PROFESSION, Identifier.of(GoFishing.MOD_ID, name),
-                new VillagerProfession(Text.literal(name), entry -> entry.matchesKey(type), entry -> entry.matchesKey(type),
-                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_FISHERMAN));
+    public static final VillagerProfession FISHING_MASTER = registerProfession(FISHING_MASTER_KEY, FISHING_POI_KEY);
+
+    private static VillagerProfession registerProfession(RegistryKey<VillagerProfession> key, RegistryKey<PointOfInterestType> poi) {
+        return Registry.register(Registries.VILLAGER_PROFESSION, key,
+                new VillagerProfession(
+                        Text.literal(key.getValue().getPath()), // ใช้ชื่อจาก key
+                        entry -> entry.matchesKey(poi),
+                        entry -> entry.matchesKey(poi),
+                        ImmutableSet.of(),
+                        ImmutableSet.of(),
+                        SoundEvents.ENTITY_VILLAGER_WORK_FISHERMAN));
     }
 
     private static PointOfInterestType registerPoi(String name, Block block) {
@@ -40,6 +45,7 @@ public class ModVillagers {
     }
 
     public static void registerVillagers() {
-        GoFishing.LOGGER.info("Registering Villagers" + GoFishing.MOD_ID);
+        GoFishing.LOGGER.info("Registering Villagers " + GoFishing.MOD_ID);
     }
+     */
 }

@@ -15,5 +15,8 @@
 
   "itemgroup.go-fishing.raw_greedily_fish_item": "Item Mod Go Fishing",
 
+  "entity.minecraft.villager.fishing_master": "Fishing Master",
+  "entity.go-fishing.villager.fishing_master": "Fishing Master",
+  "villager.profession.go-fishing.fishing_master": "Fishing Master",
   "entity.minecraft.villager.go-fishing.fishing_master": "Fishing Master"
 }
