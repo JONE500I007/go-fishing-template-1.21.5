@@ -13,10 +13,12 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public abstract class VillagerEntityMixin {
     @ModifyConstant(method = "fillRecipes", constant = @Constant(intValue = 2))
     private int changeTradeCount(int original, @Local VillagerData villagerData) {
-        if (villagerData.getProfession() == VillagerProfession.FARMER && villagerData.getLevel() == 1) {
+        /*
+        if (villagerData.profession().matchesKey(VillagerProfession.FARMER) && villagerData.level() == 1) {
             return Integer.MAX_VALUE;
         }
-        if (villagerData.getProfession() == ModVillagers.FISHING_MASTER && villagerData.getLevel() == 1) {
+         */
+        if (villagerData.profession().matchesKey(ModVillagers.FISHING_MASTER_KEY) && villagerData.level() == 1) {
             return Integer.MAX_VALUE;
         }
         return original;
