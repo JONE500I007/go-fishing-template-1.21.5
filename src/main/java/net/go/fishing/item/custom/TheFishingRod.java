@@ -22,6 +22,14 @@ public class TheFishingRod extends FishingRodItem {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         return super.finishUsing(stack, world, user);
     }
+    
+/*
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return super.hasGlint(stack);
+    }
+
+ */
 
     @Override
     public boolean canBeEnchantedWith(ItemStack stack, RegistryEntry<Enchantment> enchantment, EnchantingContext context) {

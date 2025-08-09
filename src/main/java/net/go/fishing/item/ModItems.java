@@ -67,6 +67,9 @@ public class ModItems {
                     ));
 
 
+
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GoFishing.MOD_ID, name), item);
     }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "more-than-apples:angler_has_effect",
+          "effect": "more-than-apples:darkness_immune"
+        }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:crying_obsidian", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:bamboo_door", "weight": 10 }
+      ]
+    }
+  ]
+}
